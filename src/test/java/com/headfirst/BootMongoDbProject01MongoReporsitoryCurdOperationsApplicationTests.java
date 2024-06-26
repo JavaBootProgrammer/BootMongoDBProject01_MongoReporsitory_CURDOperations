@@ -1,4 +1,4 @@
-package com.nt.bootmongodbproject01_mongoreporsitory_curdoperations;
+package com.headfirst;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class BootMongoDbProject01MongoReporsitoryCurdOperationsApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
