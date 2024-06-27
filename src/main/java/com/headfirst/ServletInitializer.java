@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(BootMongoDbProject01MongoReporsitoryCurdOperationsApplication.class);
+		return application.sources(BootMongoDbProject01MongoRepositoryCurdOperationsApplication.class);
 	}
 
 }
