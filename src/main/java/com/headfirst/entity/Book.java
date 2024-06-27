@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Document(collation = "Book")
+@Document(collection = "book")
 public class Book {
 
 	@Id
@@ -18,6 +18,8 @@ public class Book {
 	private String author;
 
 	private Integer pages;
+
+	private String press;
 
 	@Override
 	public String toString() {
@@ -29,6 +31,6 @@ public class Book {
 				'}';
 	}
 
-	private String press;
+
 
 }
