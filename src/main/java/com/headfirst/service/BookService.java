@@ -5,9 +5,9 @@ import com.headfirst.entity.Book;
 import java.util.List;
 import java.util.Optional;
 
-public interface BookServiceRegister {
+public interface BookService {
 
-	public void publishTheBook(Book dock);
+	public void publishBookService(Book dock);
 
 	public List<Book> findAllBooks();
 

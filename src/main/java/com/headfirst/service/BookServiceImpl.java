@@ -9,15 +9,15 @@ import java.util.List;
 import java.util.Optional;
 
 @Service("dockService")
-public class BookServiceImpl implements BookServiceRegister {
+public class BookServiceImpl implements BookService {
 
 	@Autowired
 	private BookRepository bookRepository;
 
 	@Override
-	public void publishTheBook(Book newBook) {
+	public void publishBookService(Book newBook) {
 
-		String dockID = bookRepository.insert(newBook).getId();
+		String dockID = bookRepository.save(newBook).getId();
 
 		System.out.println(dockID + " document ID");
 
