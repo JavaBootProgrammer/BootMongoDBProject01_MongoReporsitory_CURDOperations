@@ -1,7 +1,7 @@
 package com.headfirst.runner;
 
 import com.headfirst.entity.Book;
-import com.headfirst.service.BookService;
+import com.headfirst.service.BookServiceRegister;
 import com.headfirst.service.BookServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class MongoRepoRunner implements CommandLineRunner {
 
 	@Autowired
-	BookService dockServiceRegister;
+	BookServiceRegister dockServiceRegister;
 
 	@Autowired
 	BookServiceImpl bookWriterImpl;
@@ -35,10 +35,10 @@ public class MongoRepoRunner implements CommandLineRunner {
 
 	private void publishABook() {
 		Book book = new Book();
-		book.setTitle("English");
-		book.setAuthor("Madhuri");
-		book.setPages(500);
-		dockServiceRegister.publishBookService(book);
+		book.setAuthor("Karthy Sierra");
+		book.setPages(401);
+		book.setPress("Head First");
+		dockServiceRegister.publishTheBook(book);
 	}
 
 	private void findAllBooks() {
